@@ -7499,7 +7499,7 @@ a.anchor-link {
 <strong>Course Code:</strong> CSCN8010</p>
 <ul>
 <li><strong>GitHub Repository:</strong> <a href="https://github.com/MandeepCon/Practical-Lab-1---ULR">https://github.com/MandeepCon/Practical-Lab-1---ULR</a></li>
-<li><strong>Live Webpage (GitHub Pages):</strong> <a href="https://mandeepcon.github.io/Practical-Lab-1---ULR/">https://mandeepcon.github.io/Practical-Lab-1---ULR/</a></li>
+<li><strong>GitHub Live Pages:</strong> <a href="https://mandeepcon.github.io/Practical-Lab-1---ULR/">https://mandeepcon.github.io/Practical-Lab-1---ULR/</a></li>
 </ul>
 </div>
 </div>
@@ -7511,7 +7511,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Introduction"><strong>Introduction</strong><a class="anchor-link" href="#Introduction">¶</a></h3><p>Throught the assignment, I am using the univariate linear regression on the California housing dataset to measure the correlation between median house value and three independent variables: <strong>median income, population, and number of households</strong>. My purpose is to evaluate the individual predictive ability of each predictor by fitting and assessing different regression models, thereby identifying the variable that most significantly influences home prices. This analysis utilises statistical techniques and data visualisations to deliver clear, data-driven insights essential to the trends in California's real estate market.</p>
+<h3 id="Introduction"><strong>Introduction</strong><a class="anchor-link" href="#Introduction">¶</a></h3><p>Throught the assignment, I am using the univariate linear regression on the California housing dataset to perform the correlation between the median house values and three independent variables. Such as <strong>median income, population and number of households</strong>. I will be evaluting the individual predictive ability of each predictor by analyzing and accessing the different models of the regression. Afterwords, I will identify the variable that influence the home prices more. Throughtout this statistical techniques and data visualization to provide a clear, data-driven insights essential to the trends in california real estate market.</p>
 </div>
 </div>
 </div>
@@ -7528,6 +7528,48 @@ a.anchor-link {
 <li>Evaluate each model with MSE, MAE, and R² metrics.</li>
 </ul>
 <p>Identify the single most effective predictor for house value estimation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fffd89ea">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Importing-the-necessary-Python-libraries"><strong>Importing the necessary Python libraries</strong><a class="anchor-link" href="#Importing-the-necessary-Python-libraries">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7535a7c4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>              <span class="c1"># Data manipulation and analysis</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>               <span class="c1"># Numerical operations</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># Data visualization</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>            <span class="c1"># Statistical data visualization</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>  <span class="c1"># Linear regression modeling</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span>  <span class="c1"># Model evaluation metrics</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=491ffdd9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Getting-the-Data"><strong>Getting the Data</strong><a class="anchor-link" href="#Getting-the-Data">¶</a></h3><p>I have taken the dataset from kaggle. Dataset contains the information about the housing in California.</p>
+<p>Here is dataset link: <a href="https://www.kaggle.com/datasets/camnugent/california-housing-prices">California Housing CSV</a></p>
 </div>
 </div>
 </div>
